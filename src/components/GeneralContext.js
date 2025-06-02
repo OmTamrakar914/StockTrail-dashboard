@@ -14,7 +14,8 @@ export const GeneralContextProvider = (props) => {
   const [isBuyWindowOpen, setIsBuyWindowOpen] = useState(false);
   const [isSellWindowOpen, setIsSellWindowOpen] = useState(false);
   const [selectedStockUID, setSelectedStockUID] = useState("");
-  const [portfolio, setPortfolio] = useState({
+  // Removed setPortfolio to fix eslint error
+  const [portfolio] = useState({
     INFY: 5,
     TCS: 10,
     RELIANCE: 0,
